@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import { Header } from './src/components/common';
 import reducers from './src/reducers';
 import firebase from 'firebase';
+import LoginForm from './src/components/LoginForm';
 
 class App extends Component {
   componentWillMount(){
@@ -28,6 +29,7 @@ class App extends Component {
       <Provider store={store}>
         <View>
           <Header headerText="Please Login" />
+          <LoginForm />
         </View>
       </Provider>
     );
